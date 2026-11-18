@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>لیست کارهای من</title>
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="appheader">
+        <div class="header-top-badge">
+          <span class="badge-dot"></span>
+          <div class="kicker">برنامه‌ریزی روزانه</div>
+        </div>
+        <h1>لیست کارهای من</h1>
+        <p class="sub">کارهای امروزت رو یکی یکی بنویس و انجامشون بده.</p>
+      </header>
+      <form class="task-form" id="taskform">
+        <input
+          type="text"
+          id="taskinput"
+          placeholder="مثلاً: تمرین جاوااسکریپت"
+          autocomplete="off"
+        />
+        <button type="submit" class="add-btn">افزودن کار</button>
+      </form>
+      <p class="form-msg" id="formmsg" aria-live="polite"></p>
+      <section class="tasks-container">
+        <div class="stats-section">
+          <div class="stats-info">
+            <span class="badge-dot"></span>
+            <span class="stats-title">کارهای ثبت‌شده</span>
+          </div>
+          <span id="taskcount" class="task-count">0</span>
+        </div>
+        <ul class="task-list" id="tasklist"></ul>
+        <div id="emptystate" class="empty-state">
+          <span class="empty-icon">✓</span>
+          <p class="empty-text">هنوز کاری ثبت نکردی</p>
+          <p class="empty-subtext">اولین کار رو از کادر بالا اضافه کن.</p>
+        </div>
+      </section>
+    </main>
+    <script src="assets/scripts/script.js"></script>
+  </body>
+</html>
